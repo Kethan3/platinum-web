@@ -7,11 +7,11 @@ const middleware = (request: NextRequest) => {
   if (!cookie) {
     return NextResponse.redirect(new URL("/sign-up", request.url));
   }
+
   return NextResponse.next();
 };
 
 export default middleware;
-
 export const config = {
-    matcher : [ "",]
-}
+  matcher: ["/feed/:path*", "/posts/:path*", "/me/:path*"],
+};

@@ -1,5 +1,12 @@
+import { LogInCard } from "./_components/log-in/LogInCard";
+
+
 const LogInPage = () => {
-    return <></>;
-  };
-  
-  export default LogInPage;
+  return (
+    <div className="h-svh w-svw flex items-center justify-center bg-accent">
+      <LogInCard/>
+    </div>
+  );
+};
+
+export default LogInPage ;
